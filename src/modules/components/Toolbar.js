@@ -1,0 +1,12 @@
+import { styled } from '@mui/material/styles';
+import MuiToolbar from '@mui/material/Toolbar';
+
+const Toolbar = styled(MuiToolbar)(({ theme }) => ({
+  height: 64,
+  [theme.breakpoints.up('sm')]: {
+    height: 90,
+  },
+  backgroundColor: '#242424',
+}));
+
+export default Toolbar;

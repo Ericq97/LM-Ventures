@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import AppAppBar from './modules/views/AppAppBar';
+import ProductHero from './modules/views/ProductHero';
 import reportWebVitals from './reportWebVitals';
+import ProductCategories from './modules/views/ProductCategories';
+import ProductValues from './modules/views/ProductValues';
+import NewsList from './modules/views/News';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppAppBar />
+    <ProductHero />
+    <ProductValues />
+    <ProductCategories />
+    {/* <NewsList /> */}
   </React.StrictMode>
 );
 
